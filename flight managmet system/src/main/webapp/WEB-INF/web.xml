@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee 
+         https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <display-name>Flight Reservation System</display-name>
+    <description>Flight Reservation System - Nimbus Airlines</description>
+
+    <!-- Welcome File List -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- Session Configuration -->
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+    <!-- Context Parameters -->
+    <context-param>
+        <param-name>xmlDataPath</param-name>
+        <param-value>/WEB-INF/data/</param-value>
+    </context-param>
+
+    <!-- Error Pages -->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error404.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/error500.jsp</location>
+    </error-page>
+
+    <!-- Security Constraint for Admin -->
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Admin Area</web-resource-name>
+            <url-pattern>/admin/*</url-pattern>
+        </web-resource-collection>
+    </security-constraint>
+
+    <!-- Filters -->
+    <filter>
+        <filter-name>AuthenticationFilter</filter-name>
+        <filter-class>com.nimbus.frs.filter.AuthenticationFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AuthenticationFilter</filter-name>
+        <url-pattern>/booking/*</url-pattern>
+        <url-pattern>/admin/*</url-pattern>
+    </filter-mapping>
+
+    <!-- Servlets -->
+    <!-- User Management Servlets -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.nimbus.frs.controller.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.nimbus.frs.controller.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.nimbus.frs.controller.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <!-- Flight Search Servlet -->
+    <servlet>
+        <servlet-name>FlightSearchServlet</servlet-name>
+        <servlet-class>com.nimbus.frs.controller.FlightSearchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FlightSearchServlet</servlet-name>
+        <url-pattern>/searchFlights</url-pattern>
+    </servlet-mapping>
+
+    <!-- Booking Servlets -->
+    <servlet>
+        <servlet-name>BookingServlet</servlet-name>
+        <servlet-class>com.nimbus.frs.controller.BookingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookingServlet</servlet-name>
+        <url-pattern>/booking</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CancelBookingServlet</servlet-name>
+        <servlet-class>com.nimbus.frs.controller.CancelBookingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CancelBookingServlet</servlet-name>
+        <url-pattern>/cancelBooking</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BookingHistoryServlet</servlet-name>
+        <servlet-class>com.nimbus.frs.controller.BookingHistoryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookingHistoryServlet</servlet-name>
+        <url-pattern>/bookingHistory</url-pattern>
+    </servlet-mapping>
+
+    <!-- Payment Servlet -->
+    <servlet>
+        <servlet-name>PaymentServlet</servlet-name>
+        <servlet-class>com.nimbus.frs.controller.PaymentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PaymentServlet</servlet-name>
+        <url-pattern>/payment</url-pattern>
+    </servlet-mapping>
+
+    <!-- Admin Servlets -->
+    <servlet>
+        <servlet-name>AdminFlightServlet</servlet-name>
+        <servlet-class>com.nimbus.frs.controller.admin.AdminFlightServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminFlightServlet</servlet-name>
+        <url-pattern>/admin/flights</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdminReportServlet</servlet-name>
+        <servlet-class>com.nimbus.frs.controller.admin.AdminReportServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminReportServlet</servlet-name>
+        <url-pattern>/admin/reports</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdminPassengerServlet</servlet-name>
+        <servlet-class>com.nimbus.frs.controller.admin.AdminPassengerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminPassengerServlet</servlet-name>
+        <url-pattern>/admin/passengers</url-pattern>
+    </servlet-mapping>
+
+</web-app>
