@@ -1,5 +1,7 @@
 # Weather-App
 
+![Weather logo](./logo.svg)
+
 A small Spring Boot web application that displays weather information using server-rendered Thymeleaf templates.
 
 -This repository is a demo/sample Weather App built with:

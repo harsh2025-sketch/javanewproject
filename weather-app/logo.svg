@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="80" viewBox="0 0 320 80">
+  <rect rx="10" width="320" height="80" fill="#2b8aef" />
+  <g transform="translate(14,12)">
+    <circle cx="34" cy="28" r="18" fill="#ffd166" />
+    <path d="M70 28 q8 -18 26 -18 q-12 6 -12 18 q0 18 -14 18 q-6 0 -12 -6 z" fill="#ffffff" opacity="0.9"/>
+    <text x="110" y="44" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="20" fill="#ffffff">Weather App</text>
+  </g>
+</svg>

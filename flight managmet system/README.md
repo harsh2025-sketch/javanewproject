@@ -1,4 +1,6 @@
-# Flight Reservation System
+﻿# Flight Reservation System
+
+![Flight logo](./logo.svg)
 
 [![Java](https://img.shields.io/badge/Java-21%20LTS-orange.svg)](https://adoptium.net/temurin/releases/?version=21)
 [![Jakarta EE](https://img.shields.io/badge/Jakarta%20EE-10-blue.svg)](https://jakarta.ee/specifications/platform/10/)
@@ -7,20 +9,20 @@
 
 A modern Flight Reservation System built with Java 21, Jakarta EE 10, featuring flight booking, passenger management, and airline operations.
 
-## ✨ Features
+## âœ¨ Features
 
-- 🔍 **Flight Search & Booking** - Search flights with real-time seat availability
-- 👥 **Passenger Management** - XML-based passenger data storage
-- 🎫 **Ticket Management** - Electronic tickets with unique booking IDs
-- 📅 **Schedule Management** - Real-time flight updates and notifications
-- 💰 **Fare Calculation** - Automatic fare calculation by class
-- 💳 **Payment Integration** - Secure payment gateway support
-- 📊 **Booking History** - Complete booking history tracking
-- 🔐 **User Roles** - Customer and Admin role management
-- 📧 **Notifications** - Email/SMS for bookings and alerts
-- 📈 **Reports & Analytics** - Revenue and booking analytics
+- ðŸ” **Flight Search & Booking** - Search flights with real-time seat availability
+- ðŸ‘¥ **Passenger Management** - XML-based passenger data storage
+- ðŸŽ« **Ticket Management** - Electronic tickets with unique booking IDs
+- ðŸ“… **Schedule Management** - Real-time flight updates and notifications
+- ðŸ’° **Fare Calculation** - Automatic fare calculation by class
+- ðŸ’³ **Payment Integration** - Secure payment gateway support
+- ðŸ“Š **Booking History** - Complete booking history tracking
+- ðŸ” **User Roles** - Customer and Admin role management
+- ðŸ“§ **Notifications** - Email/SMS for bookings and alerts
+- ðŸ“ˆ **Reports & Analytics** - Revenue and booking analytics
 
-## 🚀 Quick Start
+## ðŸš€ Quick Start
 
 ### Prerequisites
 
@@ -45,9 +47,9 @@ copy target\flight-reservation-system.war <TOMCAT_HOME>\webapps\
 # http://localhost:8080/flight-reservation-system
 ```
 
-📖 **Detailed Setup**: See [docs/SETUP.md](docs/SETUP.md) for complete installation instructions.
+ðŸ“– **Detailed Setup**: See [docs/SETUP.md](docs/SETUP.md) for complete installation instructions.
 
-## 🛠️ Technology Stack
+## ðŸ› ï¸ Technology Stack
 
 - **Backend**: Java 21 (LTS), Jakarta Servlets 6.0, Jakarta JSP 3.1
 - **Data Storage**: XML with DOM4J 2.1.4
@@ -57,23 +59,23 @@ copy target\flight-reservation-system.war <TOMCAT_HOME>\webapps\
 - **Logging**: SLF4J 2.0
 - **Testing**: JUnit 5 (Jupiter)
 
-## 📁 Project Structure
+## ðŸ“ Project Structure
 
 ```
 flight-reservation-system/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/nimbus/frs/
-│   │   │       ├── model/          # Domain entities
-│   │   │       └── util/           # Utilities & XML handlers
-│   │   └── webapp/
-│   │       └── WEB-INF/
-│   │           └── web.xml         # Web deployment descriptor
-│   └── test/                       # Unit tests
-├── docs/                           # Documentation
-├── pom.xml                         # Maven configuration
-└── README.md                       # This file
+â”œâ”€â”€ src/
+â”‚   â”œâ”€â”€ main/
+â”‚   â”‚   â”œâ”€â”€ java/
+â”‚   â”‚   â”‚   â””â”€â”€ com/nimbus/frs/
+â”‚   â”‚   â”‚       â”œâ”€â”€ model/          # Domain entities
+â”‚   â”‚   â”‚       â””â”€â”€ util/           # Utilities & XML handlers
+â”‚   â”‚   â””â”€â”€ webapp/
+â”‚   â”‚       â””â”€â”€ WEB-INF/
+â”‚   â”‚           â””â”€â”€ web.xml         # Web deployment descriptor
+â”‚   â””â”€â”€ test/                       # Unit tests
+â”œâ”€â”€ docs/                           # Documentation
+â”œâ”€â”€ pom.xml                         # Maven configuration
+â””â”€â”€ README.md                       # This file
 ```
 
 ## Setup Instructions
@@ -88,16 +90,16 @@ flight-reservation-system/
   - GlassFish 7.x or later
 - **IDE** (Eclipse 2023-06+, IntelliJ IDEA 2023.2+, or VS Code with Java extensions)
 
-> ⚠️ **Important**: This project requires Jakarta EE 10 support. Older servers (Tomcat 9.x, Java EE 8 servers) will NOT work.
+> âš ï¸ **Important**: This project requires Jakarta EE 10 support. Older servers (Tomcat 9.x, Java EE 8 servers) will NOT work.
 
-## 📚 Documentation
+## ðŸ“š Documentation
 
 - **[Setup Guide](docs/SETUP.md)** - Complete installation and configuration
 - **[Java 21 Upgrade](docs/UPGRADE.md)** - Details about Java 21 migration
-- **[Jakarta EE Migration](docs/JAKARTA_MIGRATION.md)** - javax → jakarta migration guide
+- **[Jakarta EE Migration](docs/JAKARTA_MIGRATION.md)** - javax â†’ jakarta migration guide
 - **[API Documentation](docs/API.md)** - REST endpoints and usage
 
-## 🔐 Default Credentials
+## ðŸ” Default Credentials
 
 ### Customer Account
 ```
@@ -111,7 +113,7 @@ Username: admin@nimbus.com
 Password: admin123
 ```
 
-## 🧪 Testing
+## ðŸ§ª Testing
 
 ```bash
 # Run all tests
@@ -121,7 +123,7 @@ mvn test
 mvn test jacoco:report
 ```
 
-## 🤝 Contributing
+## ðŸ¤ Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -129,20 +131,20 @@ mvn test jacoco:report
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📝 License
+## ðŸ“ License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👥 Authors
+## ðŸ‘¥ Authors
 
 - Flight Reservation System Team
 
-## 🙏 Acknowledgments
+## ðŸ™ Acknowledgments
 
 - Built with Java 21 and Jakarta EE 10
 - Inspired by modern airline reservation systems
 
-## 📮 Support
+## ðŸ“® Support
 
 For issues and questions:
 - Open an [Issue](../../issues)
@@ -152,4 +154,5 @@ For issues and questions:
 
 **Version**: 2.0  
 **Last Updated**: November 2025  
-**Status**: ✅ Production Ready
+**Status**: âœ… Production Ready
+

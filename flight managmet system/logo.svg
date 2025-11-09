@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="80" viewBox="0 0 320 80">
+  <rect rx="10" width="320" height="80" fill="#0a3d62" />
+  <g transform="translate(12,10)">
+    <path d="M12 40 L60 20 L80 24 L40 44 Z" fill="#f6b042" />
+    <circle cx="110" cy="40" r="18" fill="#f6b042" />
+    <text x="140" y="48" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="20" fill="#ffffff">Flight Reservation</text>
+  </g>
+</svg>
