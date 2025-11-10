@@ -1,4 +1,4 @@
-# Java Mini Projects
+# Java Projects
 
 This repository contains two small Java projects bundled together:
 
