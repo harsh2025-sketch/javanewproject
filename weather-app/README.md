@@ -100,12 +100,7 @@ Example static image included in the app:
 
 ---
 
-If you want, I can:
-- Add a short `README` section describing how to provide API keys (if the app uses an external weather API),
-- Create a minimal `.env` or properties template file for configuration, or
-- Add a small `Makefile` / PowerShell script to simplify common commands.
 
-Tell me which of those you'd like next.
 
 
 
